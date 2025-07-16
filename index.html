@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" inte
+grity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        border: border-box;
+    }
+    .navbar{
+       height: 60px; 
+       background-color: #0f1111;
+       color: white;
+       align-items: center;
+       display: flex;
+       justify-content: space-evenly;
+       position:fixed;
+       width: 1400px;
+
+    }
+    .nav-logo{
+         height: 50px;
+         width: 100px;
+       
+    }
+    .logo{
+         background-image: url(amazon-logo.png);
+         height: 50px;
+         width: 110%;
+         background-size: cover;
+    }
+    .border{
+        border: 2px solid transparent;
+    }
+    .border:hover{
+        border: 2px solid white;
+    }
+    /* box2 */
+    .first{
+        color: #cccccc;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .last{
+        font-size: 14px;
+         margin-left: 3px;
+    }
+    .add-icon{
+        display: flex;
+        align-items: center;
+    }
+    /* box3 */
+    .nav-search{
+        display: flex;
+        background-color: orange;
+        width: 620px;
+        height: 40px;
+        border-radius: 4px;
+        justify-content: space-evenly;
+    }
+    .search-select{
+        background-color: #e0e0e09c;
+        text-align: center;
+        width: 50px;
+        border-radius: 4px;
+    }
+    .search-input{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+    }
+    .search-icon{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 45px;
+        font-size: 1.2rem;
+         border-radius: 4px;
+    }
+    /* box4 */
+    span{
+        font-size: 12px;
+        }
+    .nav-second{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav-search:hover{
+        border: 2px solid orange
+    }
+    .nav-cart i{
+        font-size: 30px;
+    }
+    .nav-cart{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+    
+    .orders{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    /* pannel */
+
+    .panel{
+        height: 40px;
+        background-color: #222f3d;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-evenly;
+    }
+    .panel-ops p{
+        display: inline;
+        margin: 10px;
+        font-size: 14px;
+    } .border{
+        border: 2px solid transparent;
+    }
+    .border:hover{
+        border: 2px solid white;
+    }
+    /* hero section */
+
+    .hero-section{
+        background-image: url(hero_image.jpg);
+        height: 350px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+    .hero-message{
+        background-color: white;
+        color:black;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 23px;
+        width: 97%;
+    }
+    .hero-message a{
+        color: green;
+        list-style: none;
+    }
+
+    /* shop-section */
+
+    
+    .box{
+        height: 400px;
+        width: 23%;
+         background-color: white;
+         padding: 20px 0px 15px;
+         margin-top: 15px;
+    }
+    .shop-section{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #e2e7e6;
+        flex-wrap: wrap;
+       
+    }
+   .box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom:  1rem;
+
+   }
+   .box-content{
+    margin-left: 18px;
+    margin-right: 18px;
+   }
+   .box-content p{
+    color: #4c9904 ;
+   }
+   /* foot-pannel */
+
+   footer{
+    margin-top: 15px;
+   }
+
+   .foot-panel{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+
+   }
+   .foot-panal2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+   }
+   ul a{
+    display: block;
+    font-size: 0.85rem;
+    color: #dddddd;
+    margin-top:11px;
+   }
+   ul{
+    margin-top: 50px;
+   }
+   /* foot-panel3 */
+
+   .foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .logo{
+  background-image: url(amazon-logo.png);
+  height: 50px;
+  width: 100px;
+  background-size: cover;
+   }
+
+   
+</style>
+<body>
+       <header>
+        <div class="navbar ">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+        <div class="nav-adress border">
+            <p class="first">
+                   Delivering to Patna 800027
+                </p>
+                <div class="add-icon">
+                 <i class="fa-solid fa-location-dot"></i>
+                    <p class="last">
+                   Update location
+                </p>
+                </div>
+                </div> 
+
+                 <div class="nav-search">
+        <select class="search-select">
+            <option>all</option>
+        </select>
+        <input type="search" placeholder="search amazon" class="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        </div>
+        <div class="nav-sing border">
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-second"> Account & Lists</p>
+        </div>
+        <div class="order border">
+            <p><span>Returns</span></p>
+            <p class="orders">$ orders</p>
+        </div>
+        <div class="nav-cart border">
+           <i class="fa-solid fa-cart-shopping"></i>
+            cart
+        </div>
+
+        </div>
+
+         <div class="panel">
+            <div class="panel-all border">
+             <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops ">
+                <p class="border">MX Player</p>
+                <p class="border">Sell</p>
+                <p class="border">Bestsellers</p>
+                <p class="border">Mobiles</p>
+                <p class="border">Prime</p>
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">New Releases</p>
+                <p class="border">Fashion</p>
+                <p class="border"> Pay</p>
+                <p class="border"> Electronics </p>
+                <p class="border">Home & Kitchen</p>
+                <p class="border">Computers</p>
+            </div>
+        </div> 
+       </header>
+       
+       <div class="hero-section">
+        <div class="hero-message">
+            <p>you are on amazon,com. you can shop on amazon india for  millions of prouduct with fast local delivery. <a> click here to go to amazon.in</a></p>
+        </div>
+       </div>
+
+       <!-- shop -->
+
+       <div class="shop-section">
+           <div class="box">
+       <div class="box-content">
+           <h2> clothes</h2>
+           <div class="box-img" style="background-image: url('box1_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2>health & care</h2>
+           <div class="box-img" style="background-image: url('box2_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2>Furniture</h2>
+           <div class="box-img" style="background-image: url('box3_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2> Electronics</h2>
+           <div class="box-img" style="background-image: url('box4_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2> beauty product</h2>
+           <div class="box-img" style="background-image: url('box5_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2> animals</h2>
+           <div class="box-img" style="background-image: url('box6_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2> Toys</h2>
+           <div class="box-img" style="background-image: url('box7_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+           <div class="box">
+       <div class="box-content">
+           <h2> Traditional fassion</h2>
+           <div class="box-img" style="background-image: url('box8_image.jpg');">
+        </div>
+        <p>see more</p>
+        </div>
+         </div>
+     </div>
+
+     <footer>
+        <div class="foot-panel">
+            back to top
+        </div>
+
+         <div class="foot-panal2">
+           <ul>
+                <h3>get to known us</h3>
+                <a>careers</a>
+                <a>blog</a>
+                <a>about amazon</a>
+                <a>investor relations</a>
+                <a>amazon device</a>
+                <a>amazon science</a>
+            </ul>
+           
+            <ul>
+                <h3>Connect with Us</h3>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+            </ul>
+           
+            <ul>
+                <h3>Make Money with Us</h3>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
+                
+            </ul>
+
+              <ul>
+                <h3>Let Us Help You</h3>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
+            </ul>
+         </div>
+         <!-- foot=pannel3 -->
+
+         <div class="foot-panel3">
+            <div class="logo">
+
+            </div>
+
+         </div>
+     </footer>
+</body>
+</html>
